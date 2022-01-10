@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas Do Dia</title>
+    <link rel="stylesheet" href="horas_do_dia.css">
+</head>
+<body onload="carregar()"> <!--quando carregar a pagina, carrega o codigo JS-->
+    <header>
+        <h1>Horas Do Dia</h1>
+    </header>
+    <section>
+        <br>que horas são ?</br>
+        <input type="number" name="hora" id="hora" placeholder="horas do dia">
+        <input type="button" value="confirmar" onclick="confirmar()">
+        <div id='msg'>
+            São exatamente
+        </div>
+        <div id='foto'>
+            <img id="imagem" src="foto-manha.png" alt="Foto do Dia">
+        </div>
+    </section>
+    <footer>
+            <p>&copy;CursoEmVideo</p>
+    </footer>
+    <script src="JavaScript_horas_do_dia.js"></script>
+</body>
+</html>
